@@ -1,7 +1,7 @@
 ﻿using BootcampAPI.Input;
 using BootcampAPI.Models;
 using BootcampAPI.Output;
-
+using System.Linq;
 namespace BootcampAPI.Helper
 {
     public class StudentHelper
@@ -235,6 +235,96 @@ namespace BootcampAPI.Helper
                 throw new Exception(ex.Message);
             }
 
+        }
+        public studentData? GetStudentData(int id)
+        {
+            var returnValue = new studentData();
+            try
+            {
+                var studentData = dBContext.MsStudent.Where(x => x.id == id).FirstOrDefault();
+                if(studentData != null)
+                {
+                    var genderData = dBContext.MsGender.Where(x => x.id == studentData.genderId).FirstOrDefault();
+                    var religionData = dBContext.MsReligion.Where(x => x.id == studentData.religionId).FirstOrDefault();
+                    // join table
+                    var scoreList1 = dBContext.TrScore.Where(x => x.studentId == studentData.id && x.semester == 1)
+                        .Join(dBContext.MsSubject,
+                        score => score.subjectId,
+                        subject => subject.id,
+                        (score, subject) => new
+                        { 
+                            score.studentId,
+                            subjectId = subject.id,
+                            subjectName = subject.name,
+                            score.semester,
+                            score.score,
+                        }).ToList();
+                    var scoreList2 = dBContext.TrScore.Where(x => x.studentId == studentData.id && x.semester == 2)
+                        .Join(dBContext.MsSubject,
+                        score => score.subjectId,
+                        subject => subject.id,
+                        (score, subject) => new
+                        {
+                            score.studentId,
+                            subjectId = subject.id,
+                            subjectName = subject.name,
+                            score.semester,
+                            score.score,
+                        }).ToList();
+
+                    var scoreList = scoreList1
+                        .Join(scoreList2, 
+                    scoreList1 => new { scoreList1.studentId, scoreList1.subjectId },
+                    scoreList2 => new { scoreList2.studentId, scoreList2.subjectId },
+                    (scoreList1, scoreList2) => new Score(){
+                       subjectId = scoreList1.subjectId,
+                       subjectName = scoreList1.subjectName,
+                       semester1Score = scoreList1.score,
+                       semester2Score = scoreList2.score,
+                       finalScore = scoreList1.score + scoreList2.score / 2
+                    }).ToList();
+                    decimal totalScore = 0;
+                    foreach(var score in scoreList)
+                    {
+                        totalScore += score.finalScore;
+                    }
+
+                    var averageFinalScore = totalScore / scoreList.Count;
+                    var grade = dBContext.MsGrade.Where(x => averageFinalScore >= x.minScore 
+                    && averageFinalScore <= x.maxScore).FirstOrDefault();
+                    var student = new Student
+                    {
+                        id = studentData.id,
+                        name = studentData.name,
+                    };
+
+                    var gender = new Gender
+                    {
+                        id = genderData.id,
+                        description = genderData.description,
+                    };
+                    var religion = new religion
+                    {
+                        id = religionData.id,
+                        description = religionData.description,
+                    };
+                    returnValue.student = student;
+                    returnValue.birthdate = studentData.birthdate;
+                    returnValue.gender = gender;
+                    returnValue.religion = religion;
+                    returnValue.email = studentData.email;
+                    returnValue.averageFinalScore = Math.Round(averageFinalScore, 2);
+
+                    return returnValue;
+
+                }
+
+                return returnValue;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

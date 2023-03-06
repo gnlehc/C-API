@@ -15,6 +15,7 @@ builder.Services.AddDbContext<SchoolDBContext>(options =>
 
 builder.Services.AddScoped<GenderHelper>();
 builder.Services.AddScoped<StudentHelper>();
+builder.Services.AddScoped<ReligionHelper>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
