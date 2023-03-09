@@ -9,37 +9,37 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BootcampAPI
 build_property.RootNamespace = BootcampAPI
-build_property.ProjectDir = C:\Users\Chelsea Ng\OneDrive - Bina Nusantara\IT DIV\IT DIV TRAINING 2023\BootcampAPI\
+build_property.ProjectDir = C:\Users\Chelsea Ng\OneDrive - Bina Nusantara\Backend-API\BootcampAPI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Chelsea Ng\OneDrive - Bina Nusantara\IT DIV\IT DIV TRAINING 2023\BootcampAPI
+build_property.MSBuildProjectDirectory = C:\Users\Chelsea Ng\OneDrive - Bina Nusantara\Backend-API\BootcampAPI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Chelsea Ng/OneDrive - Bina Nusantara/IT DIV/IT DIV TRAINING 2023/BootcampAPI/Pages/Error.cshtml]
+[C:/Users/Chelsea Ng/OneDrive - Bina Nusantara/Backend-API/BootcampAPI/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Chelsea Ng/OneDrive - Bina Nusantara/IT DIV/IT DIV TRAINING 2023/BootcampAPI/Pages/Index.cshtml]
+[C:/Users/Chelsea Ng/OneDrive - Bina Nusantara/Backend-API/BootcampAPI/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Chelsea Ng/OneDrive - Bina Nusantara/IT DIV/IT DIV TRAINING 2023/BootcampAPI/Pages/Privacy.cshtml]
+[C:/Users/Chelsea Ng/OneDrive - Bina Nusantara/Backend-API/BootcampAPI/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Chelsea Ng/OneDrive - Bina Nusantara/IT DIV/IT DIV TRAINING 2023/BootcampAPI/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Chelsea Ng/OneDrive - Bina Nusantara/Backend-API/BootcampAPI/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Chelsea Ng/OneDrive - Bina Nusantara/IT DIV/IT DIV TRAINING 2023/BootcampAPI/Pages/_ViewImports.cshtml]
+[C:/Users/Chelsea Ng/OneDrive - Bina Nusantara/Backend-API/BootcampAPI/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Chelsea Ng/OneDrive - Bina Nusantara/IT DIV/IT DIV TRAINING 2023/BootcampAPI/Pages/_ViewStart.cshtml]
+[C:/Users/Chelsea Ng/OneDrive - Bina Nusantara/Backend-API/BootcampAPI/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Chelsea Ng/OneDrive - Bina Nusantara/IT DIV/IT DIV TRAINING 2023/BootcampAPI/Pages/Shared/_Layout.cshtml]
+[C:/Users/Chelsea Ng/OneDrive - Bina Nusantara/Backend-API/BootcampAPI/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-vyo7ae9swt

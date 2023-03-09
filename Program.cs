@@ -25,6 +25,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
+// Cross Origin Resource Sharing
+app.UseCors();
+
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

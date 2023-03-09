@@ -1,11 +1,13 @@
 ﻿using BootcampAPI.Helper;
 using BootcampAPI.Input;
 using BootcampAPI.Output;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BootcampAPI.Controller
 {
+    [EnableCors]
     [Route("api/[controller]")]
     [ApiController]
     public class StudentController : ControllerBase

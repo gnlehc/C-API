@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Chelsea Ng\\OneDrive - Bina Nusantara\\IT DIV\\IT DIV TRAINING 2023\\BootcampAPI\\BootcampAPI.csproj": {}
+    "C:\\Users\\Chelsea Ng\\OneDrive - Bina Nusantara\\Backend-API\\BootcampAPI\\BootcampAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Chelsea Ng\\OneDrive - Bina Nusantara\\IT DIV\\IT DIV TRAINING 2023\\BootcampAPI\\BootcampAPI.csproj": {
+    "C:\\Users\\Chelsea Ng\\OneDrive - Bina Nusantara\\Backend-API\\BootcampAPI\\BootcampAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Chelsea Ng\\OneDrive - Bina Nusantara\\IT DIV\\IT DIV TRAINING 2023\\BootcampAPI\\BootcampAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Chelsea Ng\\OneDrive - Bina Nusantara\\Backend-API\\BootcampAPI\\BootcampAPI.csproj",
         "projectName": "BootcampAPI",
-        "projectPath": "C:\\Users\\Chelsea Ng\\OneDrive - Bina Nusantara\\IT DIV\\IT DIV TRAINING 2023\\BootcampAPI\\BootcampAPI.csproj",
+        "projectPath": "C:\\Users\\Chelsea Ng\\OneDrive - Bina Nusantara\\Backend-API\\BootcampAPI\\BootcampAPI.csproj",
         "packagesPath": "C:\\Users\\Chelsea Ng\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Chelsea Ng\\OneDrive - Bina Nusantara\\IT DIV\\IT DIV TRAINING 2023\\BootcampAPI\\obj\\",
+        "outputPath": "C:\\Users\\Chelsea Ng\\OneDrive - Bina Nusantara\\Backend-API\\BootcampAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

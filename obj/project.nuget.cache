@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3JHU1pDKAbVGd6/vck47DhwIBrgnZ51l2d5kKGZQ77Ef5rbKPff/IGcw4r16nRs/acyL+Y4EtLWNNHzJaaiztw==",
+  "dgSpecHash": "nWIp3WZzPsKcsZFMZB8gU/oYpVQf/f8lAyqi9+4ZxPcpIE3vOJcCqobuCPGVwWoEHibykSxQHLG2PLWbhTozxw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Chelsea Ng\\OneDrive - Bina Nusantara\\IT DIV\\IT DIV TRAINING 2023\\BootcampAPI\\BootcampAPI.csproj",
+  "projectFilePath": "C:\\Users\\Chelsea Ng\\OneDrive - Bina Nusantara\\Backend-API\\BootcampAPI\\BootcampAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Chelsea Ng\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Chelsea Ng\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
